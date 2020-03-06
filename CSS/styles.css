@@ -1,0 +1,16 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Oxanium:400,700&display=swap");
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  /* 부모의 색상을 받아오는 것 */
+  color: inherit;
+  /* 텍스트에 줄을 그을때 사용*/
+  text-decoration: none;
+}
