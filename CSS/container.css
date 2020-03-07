@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  height: 40px;
+  background-color: #545454;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container__icon {
+  color: white;
+  display: flex;
+  margin-right: 50px;
+}
+.container__icon .social-icon {
+  font-size: 18px;
+  margin-left: 20px;
+}
+.container__button {
+  margin-right: 50px;
+  color: white;
+}
+.container__button .container__register {
+  margin-right: 15px;
+}
