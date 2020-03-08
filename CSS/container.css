@@ -1,4 +1,5 @@
 .container {
+  /* container 정렬*/
   width: 100%;
   height: 40px;
   background-color: #545454;
@@ -8,15 +9,18 @@
 }
 
 .container__icon {
-  color: white;
+  /* 아이콘 정렬 */
   display: flex;
   margin-right: 50px;
 }
 .container__icon .social-icon {
   font-size: 18px;
+  color: white;
   margin-left: 20px;
 }
+
 .container__button {
+  /* 회원가입, 로그인 정렬 */
   margin-right: 50px;
   color: white;
 }

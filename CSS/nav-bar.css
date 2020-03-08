@@ -1,106 +1,131 @@
-#lnb {
+.logo {
+  position: absolute;
+  font-size: 60px;
+  font-weight: 700;
+  color: black;
+  left: 300px;
+}
+header > ul {
+  display: flex;
+  position: absolute;
+  width: 170px;
+  background: #f2f2f2;
+}
+
+header > ul li {
+  flex: 1;
+  padding: 0 0 0 18px;
+  line-height: 70px;
+}
+
+header #lnb {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 30;
+  padding: 0 500px;
+  min-width: 2200px;
   width: 100%;
-  height: 100px;
-  padding: 50px 90px 0 100px;
-}
-#lnb .nav-bar {
-  border-bottom: 1px solid #868585;
-  margin-bottom: 20px;
-  height: 100px;
   box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-
-.nav-bar__list {
-  overflow: hidden;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  margin-right: 90px;
-}
-.nav-bar__list:hover {
-  overflow: visible;
-}
-.nav-bar__list:hover .dropdown-menu {
-  opacity: 1;
-  display: block;
-}
-.nav-bar__list-item {
-  margin-top: 10px;
-  margin-right: 10px;
+header #lnb nav {
   position: relative;
-  font-size: 25px;
+  z-index: 30;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 0;
+}
+header #lnb nav > ul {
+  display: inline-block;
+  overflow: hidden;
+  height: 100px;
+  transition: all 0.5s;
+}
+header #lnb nav > ul:hover {
   overflow: visible;
 }
-
-.nav-bar__list-item > a {
+header #lnb nav + div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 29;
+  padding: 0 30px 100;
+  width: 100%;
+  height: 0;
+  background: #545454;
+  opacity: 0;
+  transition: all 0.5s;
+  box-sizing: border-box;
+  background-clip: content-box;
+}
+header #lnb nav:hover + div {
+  height: 400px;
+  opacity: 1;
+}
+header #lnb nav > ul > li {
+  display: inline-block;
+  position: relative;
+}
+header #lnb nav > ul > li > a {
   display: block;
   position: relative;
   width: 200px;
-  height: 85px;
-  line-height: 80px;
-  text-align: center;
+  height: 100px;
+  font-size: 25px;
+  color: black;
+  line-height: 150px;
 }
-.nav-bar__list-item > a > i {
-  font-size: 18px;
-  margin-left: 10px;
-}
-.nav-bar__list-item > a:hover {
-  background-color: #525252;
-  color: white;
-}
-.nav-bar__list-item > a::after {
+header #lnb nav > ul > li > a:after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -2px;
+  bottom: -1px;
   width: 0;
   height: 2px;
-  background-color: black;
+  background: #fff;
   transition: all 0.5s;
 }
-.nav-bar__list-item > a:hover::after {
+header #lnb nav > ul > li:hover > a:after {
   left: 0;
   width: 100%;
 }
-.dropdown-menu {
-  width: 100%;
-  position: absolute;
-  text-align: center;
 
-  font-size: 14px;
+header #lnb nav > ul ul {
+  position: absolute;
+  width: 100%;
+  height: 230px;
+  padding: 22px 0 0;
+  text-align: center;
   opacity: 0;
   transition: all 0.5s;
 }
-.dropdown-menu > li {
-  text-align: left;
-  margin-left: 50px;
-  margin-top: 40px;
+header #lnb nav > ul:hover ul {
+  opacity: 1;
 }
 
-.dropdown-menu > li > a {
+header #lnb nav > ul ul li {
+  line-height: 50px;
+}
+header #lnb nav > ul ul a {
   position: relative;
   font-size: 15px;
+  color: #fff;
+  transition: all 0.5s;
 }
-.dropdown-menu > li > a:hover {
-  color: #e96b56;
+header #lnb nav > ul ul a:hover {
+  color: coral;
 }
-.dropdown-menu > li > a::after {
+header #lnb nav > ul ul a:after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -4px;
+  bottom: -7px;
   width: 0;
   height: 2px;
-  background-color: #e96b56;
+  background: coral;
   transition: all 0.5s;
 }
-.dropdown-menu > li > a:hover::after {
+header #lnb nav > ul ul a:hover:after {
   left: 0;
   width: 100%;
 }
