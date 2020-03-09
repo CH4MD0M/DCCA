@@ -2,9 +2,12 @@
   position: absolute;
   font-size: 60px;
   font-weight: 700;
+  margin-top: 20px;
   color: black;
   left: 300px;
+  z-index: 50;
 }
+
 header > ul {
   display: flex;
   position: absolute;
@@ -19,11 +22,11 @@ header > ul li {
 }
 
 header #lnb {
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   z-index: 30;
-  padding: 0 500px;
+  padding: 0 650px;
   min-width: 2200px;
   width: 100%;
   box-sizing: border-box;
@@ -31,6 +34,7 @@ header #lnb {
 header #lnb nav {
   position: relative;
   z-index: 30;
+  height: 102px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   text-align: center;
   font-size: 0;
@@ -38,12 +42,14 @@ header #lnb nav {
 header #lnb nav > ul {
   display: inline-block;
   overflow: hidden;
+  margin-top: 20px;
   height: 100px;
   transition: all 0.5s;
 }
 header #lnb nav > ul:hover {
   overflow: visible;
 }
+
 header #lnb nav + div {
   position: absolute;
   left: 0;
@@ -62,6 +68,7 @@ header #lnb nav:hover + div {
   height: 400px;
   opacity: 1;
 }
+
 header #lnb nav > ul > li {
   display: inline-block;
   position: relative;
@@ -70,10 +77,11 @@ header #lnb nav > ul > li > a {
   display: block;
   position: relative;
   width: 200px;
-  height: 100px;
+  height: 80px;
   font-size: 25px;
   color: black;
-  line-height: 150px;
+  font-weight: 700;
+  line-height: 80px;
 }
 header #lnb nav > ul > li > a:after {
   content: "";
@@ -82,12 +90,16 @@ header #lnb nav > ul > li > a:after {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: #fff;
+  background: #e96b56;
+
   transition: all 0.5s;
 }
 header #lnb nav > ul > li:hover > a:after {
   left: 0;
   width: 100%;
+}
+header #lnb nav > ul > li:hove\               > a:hover {
+  color: #e96b56;
 }
 
 header #lnb nav > ul ul {
@@ -108,12 +120,13 @@ header #lnb nav > ul ul li {
 }
 header #lnb nav > ul ul a {
   position: relative;
-  font-size: 15px;
+  font-size: 17px;
   color: #fff;
   transition: all 0.5s;
 }
+
 header #lnb nav > ul ul a:hover {
-  color: coral;
+  color: #e96b56;
 }
 header #lnb nav > ul ul a:after {
   content: "";
@@ -122,7 +135,7 @@ header #lnb nav > ul ul a:after {
   bottom: -7px;
   width: 0;
   height: 2px;
-  background: coral;
+  background: #e96b56;
   transition: all 0.5s;
 }
 header #lnb nav > ul ul a:hover:after {
