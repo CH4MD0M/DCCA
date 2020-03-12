@@ -1,0 +1,144 @@
+.body {
+  margin: 0;
+}
+.home {
+  /* 이미지 크기 조정 */
+  height: 100vh;
+}
+.home .slider {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home .slide {
+  /* 이미지 display 조정 */
+  margin-top: 20px;
+  position: relative;
+  display: none;
+  width: 1500px;
+  height: 650px;
+  background-size: cover;
+  animation: slide 1s ease;
+}
+.home .slide.active {
+  display: flex;
+}
+@keyframes slide {
+  /* 처음 화면 로딩시 이미지 애니메이션 */
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.home .container2 {
+  max-width: 1100px;
+  margin: auto;
+  flex-grow: 1;
+}
+/* --------------h---------------- */
+.home .caption {
+  width: 50%;
+}
+.home .caption h1 {
+  font-size: 70px;
+  color: white;
+  margin: 0;
+}
+.home .slide.active .caption h1 {
+  opacity: 0;
+  animation: captionText 0.5s ease forwards;
+  animation-delay: 0.3s;
+}
+/* ---------------p--------------- */
+.home .caption p {
+  margin: 15px 0 30px;
+  font-size: 20px;
+  color: whitesmoke;
+}
+.home .slide.active .caption p {
+  opacity: 0;
+  animation: captionText 0.5s ease forwards;
+  animation-delay: 0.3s;
+}
+/* ----------------a-------------- */
+.home .caption a {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: grey;
+  text-decoration: none;
+  color: beige;
+}
+.home .slide.active .caption a {
+  opacity: 0;
+  animation: captionText 0.5s ease forwards;
+  animation-delay: 0.7s;
+}
+
+@keyframes captionText {
+  /* 페이지 로딩시 글자 좌->우 애니메이션 */
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+/* End of Slide Image  */
+
+/* 이미지 슬라이드 화살표 조정 */
+.home .controls .prev i,
+.home .controls .next i {
+  position: absolute;
+  z-index: 15;
+  top: 50%;
+  font-size: 60px;
+  color: black;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.home .controls .prev i {
+  left: 100px;
+}
+.home .controls .next i {
+  right: 100px;
+}
+
+.home .controls .prev i:hover,
+.home .controls .next i:hover {
+  animation: slide 1.5s ease;
+}
+/* End of Image Slide Icon */
+
+/* 이미지 원 */
+.home .indicator {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100px;
+  z-index: 20;
+}
+
+.home .indicator div {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  color: transparent;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  margin: 0 7px;
+}
+
+.home .indicator div.active {
+  background-color: #e96b56;
+}
+/* End of Indicator */
