@@ -2,9 +2,10 @@
   position: absolute;
   font-size: 60px;
   font-weight: 700;
-  margin-top: 20px;
+  width: 50px;
+  padding-top: 50px;
   color: black;
-  left: 300px;
+  left: 15%;
   z-index: 50;
 }
 
@@ -15,42 +16,34 @@ header > ul {
   background: #f2f2f2;
 }
 
-header > ul li {
-  flex: 1;
-  padding: 0 0 0 18px;
-  line-height: 70px;
-}
-
-header #lnb {
-  position: relative;
+#lnb {
   left: 0;
   top: 0;
   z-index: 30;
-  padding: 0 650px;
-  min-width: 2200px;
+  padding: 0 15%;
   width: 100%;
+  height: 5%;
   box-sizing: border-box;
 }
-header #lnb nav {
+.nav-bar {
   position: relative;
   z-index: 30;
-  height: 102px;
+  height: 140px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   text-align: center;
   font-size: 0;
 }
-header #lnb nav > ul {
+.nav-bar__list {
   display: inline-block;
   overflow: hidden;
-  margin-top: 20px;
-  height: 100px;
+
   transition: all 0.5s;
 }
-header #lnb nav > ul:hover {
+.nav-bar__list:hover {
   overflow: visible;
 }
 
-header #lnb nav + div {
+.nav-bar + .background-bar {
   position: absolute;
   left: 0;
   top: 0;
@@ -64,26 +57,27 @@ header #lnb nav + div {
   box-sizing: border-box;
   background-clip: content-box;
 }
-header #lnb nav:hover + div {
-  height: 400px;
+.nav-bar:hover + .background-bar {
+  height: 35%;
   opacity: 1;
 }
 
-header #lnb nav > ul > li {
+.nav-bar__list > .nav-bar__list-item {
+  margin-top: 7%;
   display: inline-block;
   position: relative;
 }
-header #lnb nav > ul > li > a {
+.nav-bar__list-item > a {
   display: block;
   position: relative;
+  margin-top: 5%;
   width: 200px;
-  height: 80px;
+  height: 70px;
   font-size: 25px;
   color: black;
   font-weight: 700;
-  line-height: 80px;
 }
-header #lnb nav > ul > li > a:after {
+.nav-bar__list-item > a:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -94,15 +88,15 @@ header #lnb nav > ul > li > a:after {
 
   transition: all 0.5s;
 }
-header #lnb nav > ul > li:hover > a:after {
+.nav-bar__list-item:hover > a:after {
   left: 0;
   width: 100%;
 }
-header #lnb nav > ul > li:hove\               > a:hover {
+.nav-bar__list-item:hover > a:hover {
   color: #e96b56;
 }
 
-header #lnb nav > ul ul {
+.nav-bar__list .dropdown-menu {
   position: absolute;
   width: 100%;
   height: 230px;
@@ -111,24 +105,24 @@ header #lnb nav > ul ul {
   opacity: 0;
   transition: all 0.5s;
 }
-header #lnb nav > ul:hover ul {
+.nav-bar__list:hover .dropdown-menu {
   opacity: 1;
 }
 
-header #lnb nav > ul ul li {
+.nav-bar__list .dropdown-menu li {
   line-height: 50px;
 }
-header #lnb nav > ul ul a {
+.nav-bar__list .dropdown-menu a {
   position: relative;
   font-size: 17px;
   color: #fff;
   transition: all 0.5s;
 }
 
-header #lnb nav > ul ul a:hover {
+.nav-bar__list .dropdown-menu a:hover {
   color: #e96b56;
 }
-header #lnb nav > ul ul a:after {
+.nav-bar__list .dropdown-menu a:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -138,7 +132,7 @@ header #lnb nav > ul ul a:after {
   background: #e96b56;
   transition: all 0.5s;
 }
-header #lnb nav > ul ul a:hover:after {
+.nav-bar__list .dropdown-menu a:hover:after {
   left: 0;
   width: 100%;
 }

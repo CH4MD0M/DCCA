@@ -49,6 +49,7 @@ function circleIndicator() {
   for (let i = 0; i < slides.length; i++) {
     const div = document.createElement("div");
     div.innerHTML = i + 1;
+    div.id = i;
     div.setAttribute("onclick", "indicateSlide(this)");
     if (i == 0) {
       div.className = "active";
@@ -64,6 +65,12 @@ function updateCircleIndicator() {
     indicator.children[i].classList.remove("active");
   }
   indicator.children[index].classList.add("active");
+}
+
+function indicateSlide(element) {
+  index = element.id;
+  changeSlide();
+  updateCircleIndicator();
 }
 
 // 자동 이미지 슬라이드
