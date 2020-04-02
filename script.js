@@ -78,6 +78,7 @@ function autoPlay() {
   nextSlide();
   updateCircleIndicator();
 }
+
 let timer = setInterval(autoPlay, 4000);
 
 function reseTimer() {
