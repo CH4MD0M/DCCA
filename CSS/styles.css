@@ -1,9 +1,9 @@
 @import "reset.css";
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap&subset=korean");
-@import "container.css";
 @import "section.css";
 @import "nav-bar.css";
-
+@import "index.css";
+@import "intro.css";
 * {
   box-sizing: border-box;
 }
