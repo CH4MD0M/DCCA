@@ -10,7 +10,7 @@
   width: 20rem;
   height: 30rem;
   margin-top: 3rem;
-  margin-left: 10rem;
+  margin-left: 4rem;
   background: #999;
 }
 .left-Menu__title {
@@ -33,19 +33,14 @@
   justify-content: space-around;
   font-size: 20px;
 }
-.right-Menu {
-  width: 20rem;
-  grid-column: 3 /4;
-}
 .content {
   grid-column: 2 / 3;
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
-  margin-left: 1rem;
+  margin: 3rem 3rem 0 1rem;
 
-  width: 100%;
-  height: 80vh;
+  width: 75vw;
+  height: 100%;
   border: 1px solid #999;
 }
 .content__title {
@@ -60,11 +55,81 @@
   font-size: 20px;
   line-height: 40px;
 }
+.content__content li {
+  display: flex;
+}
+.content__content li:before {
+  content: "•";
+  margin-right: 0.5rem;
+}
+.content__image {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0 3rem 10rem;
+  width: 80%;
+}
+.content__image a {
+  width: inherit;
+  height: 4rem;
+  background: #777;
+  color: white;
+  text-align: center;
+  line-height: 4rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.wro {
+  width: inherit;
+  background: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.tanz,
+.dcca {
+  height: 500px;
+  border-radius: 15px;
+}
+.chart {
+  width: 80%;
+  height: inherit;
+  margin: 0;
+  border-radius: 15px;
+}
+.content__content > h1 {
+  font-size: 25px;
+  margin: 2rem 0;
+}
+.content__content > ul {
+  margin-top: 3rem;
+}
+.content__content > ul > li {
+  margin-top: 0.5rem;
+}
+
 @media (max-width: 1200px) {
   .left-Menu {
     display: none;
   }
-  .right-Menu {
-    display: none;
+  .content__image {
+    width: auto;
+    margin: 0;
+  }
+  .tanz,
+  .dcca {
+    height: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    width: 95%;
+  }
+  .tanz,
+  .dcca {
+    height: 200px;
   }
 }

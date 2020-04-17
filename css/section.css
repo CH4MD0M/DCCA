@@ -149,8 +149,14 @@
 /* End of Indicator */
 
 @media screen and (max-width: 900px) {
+  .home {
+    margin: 0;
+  }
   .prev,
   .next {
+    display: none;
+  }
+  .indicator {
     display: none;
   }
   .slide.active {
