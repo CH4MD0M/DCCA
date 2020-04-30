@@ -4,6 +4,7 @@
 @import "nav-bar.css";
 @import "index.css";
 @import "intro.css";
+@import "gallery.css";
 * {
   box-sizing: border-box;
 }
@@ -20,4 +21,5 @@ body {
 
   background-color: lightgray;
   list-style: none;
+  overflow-x: hidden;
 }
