@@ -59,7 +59,7 @@
   display: flex;
 }
 .content__content li:before {
-  content: "•";
+  content: "Ã¢â‚¬Â¢";
   margin-right: 0.5rem;
 }
 .content__image {
@@ -98,6 +98,9 @@
 .content__content > h1 {
   font-size: 25px;
   margin: 2rem 0;
+}
+.content__content > h2 {
+  margin: 0 0 1.5rem 1.5rem;
 }
 .content__content > ul {
   margin-top: 3rem;
