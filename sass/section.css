@@ -1,14 +1,14 @@
 .body {
   margin: 0;
 }
-.home {
+.section-slide {
   /* 이미지 크기 조정 */
   margin: 0 10%;
   position: relative;
   height: 50vh;
   overflow: hidden;
 }
-.home .slide {
+.section-slide .slide {
   margin-top: 100px;
   /* 이미지 display 조정 */
   position: absolute;
@@ -18,7 +18,7 @@
   background-size: cover;
   animation: slide 2s ease;
 }
-.home .slide.active {
+.section-slide .slide.active {
   display: flex;
   z-index: 3;
 }
@@ -32,50 +32,50 @@
   }
 }
 
-.home .container2 {
+.section-slide .container2 {
   max-width: 1100px;
   margin: auto;
   flex-grow: 1;
 }
 /* --------------h---------------- */
-.home .caption {
+.section-slide .caption {
   position: relative;
   display: block;
   width: 100vh;
   left: 5%;
 }
-.home .caption h1 {
+.section-slide .caption h1 {
   font-size: 70px;
   color: white;
   margin: 0;
 }
-.home .slide.active .caption h1 {
+.section-slide .slide.active .caption h1 {
   opacity: 0;
   animation: captionText 0.5s ease forwards;
   animation-delay: 0.3s;
 }
 /* ---------------p--------------- */
-.home .caption p {
+.section-slide .caption p {
   width: 50%;
   display: block;
   margin: 35px 0 50px;
   font-size: 20px;
   color: whitesmoke;
 }
-.home .slide.active .caption p {
+.section-slide .slide.active .caption p {
   opacity: 0;
   animation: captionText 0.5s ease forwards;
   animation-delay: 0.3s;
 }
 /* ----------------a-------------- */
-.home .caption a {
+.section-slide .caption a {
   display: inline-block;
   padding: 10px 30px;
   background-color: grey;
   text-decoration: none;
   color: beige;
 }
-.home .slide.active .caption a {
+.section-slide .slide.active .caption a {
   opacity: 0;
   animation: captionText 0.5s ease forwards;
   animation-delay: 0.7s;
@@ -95,8 +95,8 @@
 /* End of Slide Image  */
 
 /* 이미지 슬라이드 화살표 조정 */
-.home .controls .prev i,
-.home .controls .next i {
+.section-slide .controls .prev i,
+.section-slide .controls .next i {
   position: absolute;
   z-index: 10;
   top: 50%;
@@ -108,21 +108,21 @@
   transition: all 0.5s ease;
 }
 
-.home .controls .prev i {
+.section-slide .controls .prev i {
   left: 5%;
 }
-.home .controls .next i {
+.section-slide .controls .next i {
   right: 5%;
 }
 
-.home .controls .prev i:hover,
-.home .controls .next i:hover {
+.section-slide .controls .prev i:hover,
+.section-slide .controls .next i:hover {
   animation: slide 1.5s ease;
 }
 /* End of Image Slide Icon */
 
 /* 이미지 원 */
-.home .indicator {
+.section-slide .indicator {
   cursor: pointer;
   position: absolute;
   left: 50%;
@@ -131,7 +131,7 @@
   z-index: 10;
 }
 
-.home .indicator div {
+.section-slide .indicator div {
   display: inline-block;
   width: 25px;
   height: 25px;
@@ -143,13 +143,13 @@
   margin: 0 7px;
 }
 
-.home .indicator div.active {
+.section-slide .indicator div.active {
   background-color: #e96b56;
 }
 /* End of Indicator */
 
 @media screen and (max-width: 900px) {
-  .home {
+  .section-slide {
     margin: 0;
   }
   .prev,
