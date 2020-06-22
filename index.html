@@ -14,16 +14,16 @@
     <title>Welcome | DCCA</title>
   </head>
 
-  <body>
+  <body class="container">
     <header class="header">
       <!-- 네비게이션바 -->
-      <nav class="nav-bar">
+      <nav class="navigation">
         <!-- 로고 -->
-        <div class="nav-bar__logo">
+        <div class="navigation__logo">
           <a href="index.html">DCCA</a>
         </div>
-        <ul class="nav-bar__list">
-          <li class="nav-bar__list-item">
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
             <h1>협회소개</h1>
 
             <ul class="dropdown-menu">
@@ -33,7 +33,7 @@
               <li><a href="intro-alt3.html">협회조직도</a></li>
             </ul>
           </li>
-          <li class="nav-bar__list-item">
+          <li class="navigation__list-item">
             <h1>사업소개</h1>
 
             <ul class="dropdown-menu">
@@ -44,7 +44,7 @@
               </li>
             </ul>
           </li>
-          <li class="nav-bar__list-item">
+          <li class="navigation__list-item">
             <h1>협회소식</h1>
 
             <ul class="dropdown-menu">
@@ -53,18 +53,18 @@
               <li><a href="gallery.html">협회 갤러리</a></li>
             </ul>
           </li>
-          <li class="nav-bar__list-item">
+          <li class="navigation__list-item">
             <h1><a href="data.html">자 료 실</a></h1>
           </li>
         </ul>
         <div class="background-bar"></div>
         <!-- 회원가입, 로그인 -->
-        <div class="nav-bar__button">
-          <span class="nav-bar__register">
+        <div class="navigation__button">
+          <span class="navigation__register">
             <i class="xi-mail"></i>
             <a href="signup.html">회원가입</a>
           </span>
-          <span class="nav-bar__login">
+          <span class="navigation__login">
             <i class="xi-lock"></i>
             <a href="signin.html">로그인</a>
           </span>
@@ -78,68 +78,79 @@
     </header>
     <!-- header END -->
 
-    <section class="section-slide">
-      <!-- 이미지 슬라이드 -->
+    <!-- section-slide -->
+    <section class="homes section-slide">
       <div class="slider">
-        <!-- 이미지 슬라이드-1 -->
+        <!-- slide-1 -->
         <div
           class="slide active"
           style="background-image: url('image/slide-1.jpg');"
         >
-          <div class="slide-content">
-            <!-- 이미지 슬라이드 내용 -->
+          <div class="slide__content">
             <div class="caption">
-              <h1 class="cap__title">제목 영역</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="">Bla Bla</a>
+              <h1 class="caption__title">Title</h1>
+              <p class="caption__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <button class="caption__btn">Button</button>
             </div>
           </div>
         </div>
-        <!-- 이미지 슬라이드-2 -->
+
+        <!-- slide-2 -->
         <div class="slide" style="background-image: url('image/slide-2.jpg');">
-          <div class="slide-content">
+          <div class="slide__content">
             <div class="caption">
-              <h1 class="cap__title">제목 영역</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="">Bla Bla</a>
+              <h1 class="caption__title">Title</h1>
+              <p class="caption__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <button class="caption__btn">Button</button>
             </div>
           </div>
         </div>
-        <!-- 이미지 슬라이드-3 -->
+
+        <!-- slide-3 -->
         <div class="slide" style="background-image: url('image/slide-3.jpg');">
-          <div class="slide-content">
+          <div class="slide__content">
             <div class="caption">
-              <h1 class="cap__title">제목 영역</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="">Bla Bla</a>
+              <h1 class="caption__title">Title</h1>
+              <p class="caption__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <button class="caption__btn">Button</button>
             </div>
           </div>
         </div>
       </div>
+
       <!-- controls -->
       <div class="controls">
-        <!-- 이미지 슬라이드 버튼 -->
-        <div class="prev"><i class="xi-angle-left"></i></div>
-        <div class="next"><i class="xi-angle-right"></i></div>
+        <div class="controls__prev"><i class="xi-angle-left"></i></div>
+        <div class="controls__next"><i class="xi-angle-right"></i></div>
       </div>
-      <!-- 이미지 원 -->
+
+      <!-- indicator -->
       <div class="indicator"></div>
     </section>
-    <main class="contents">
-      <div class="announce">
+
+    <!-- section-contents -->
+    <section class="homes section-contents">
+      <div class="section-contents__announce">
         <span class="title">공지 사항</span>
         Lorem, ipsum dolor sit
       </div>
-      <div class="article">
+      <div class="section-contents__article">
         <span class="title">보도 자료</span>
         Lorem ipsum dolor sit,
       </div>
-      <div class="something">
+      <div class="section-contents__something">
         <span class="title">제 목</span>
         Lorem ipsum dolor sit
       </div>
-    </main>
+    </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer__column">
         <span class="footer_logo">DCCA</span>

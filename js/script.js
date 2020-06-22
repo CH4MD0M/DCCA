@@ -1,18 +1,18 @@
 const slides = document.querySelector(".slider").children;
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
+const next = document.querySelector(".controls__next");
+const prev = document.querySelector(".controls__prev");
 const indicator = document.querySelector(".indicator");
 
 let index = 0;
 
-prev.addEventListener("click", function() {
+prev.addEventListener("click", function () {
   prevSlide();
   updateCircleIndicator();
   //   console.log("click");
   //   클릭되는지 console에서 log를 띄우는 것
 });
 
-next.addEventListener("click", function() {
+next.addEventListener("click", function () {
   nextSlide();
   updateCircleIndicator();
 });

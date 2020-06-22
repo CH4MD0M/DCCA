@@ -36,4 +36,16 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 15vh min-content 1fr 20vh;
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [center-start] repeat(3, 3fr)
+    [center-end] minmax(6rem, 1fr)
+    [full-end];
 }
